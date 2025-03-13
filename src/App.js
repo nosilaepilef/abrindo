@@ -17,7 +17,7 @@ export default function UrlShortener() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/shorten", {
+      const response = await fetch("https://abrindo-backend-production.up.railway.app/shorten", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url, customId: customId || undefined }),
