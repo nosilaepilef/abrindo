@@ -1,0 +1,92 @@
+/* styles.css */
+
+/* Definindo o fundo e centralizando com Flexbox */
+body {
+  background-color: #f0f4f8;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    max-width: 95%;
+  }
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #5a67d8;
+}
+
+button {
+  background-color: #5a67d8;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4c51bf;
+}
+
+.url-card {
+  background-color: #f7fafc;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #c6f6d5;
+  border-radius: 8px;
+}
+
+.url-card a {
+  color: #3182ce;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.url-card a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #e53e3e;
+  font-weight: bold;
+  margin-top: 10px;
+}
